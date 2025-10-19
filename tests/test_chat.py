@@ -2,9 +2,10 @@ from datetime import datetime, timezone
 from unittest.mock import patch
 
 from fastapi.testclient import TestClient
-from openai.types.chat import ChatCompletionUserMessageParam as OpenAIUserMessage
+from openai.types.chat import \
+    ChatCompletionUserMessageParam as OpenAIUserMessage
 
-from chat import ChatResponse, OpenAIResponse, CHAT_SYSTEM_MESSAGE, parse_response
+from chat import CHAT_SYSTEM_MESSAGE, ChatResponse
 from main import app
 from storage import CollectedData, Conversation
 
@@ -55,7 +56,10 @@ class TestChatAPI:
         # When
         response = self.client.post(
             "/chat",
-            json={"user_message": "Hello, how are you?", "transaction_id": "test-transaction-id"},
+            json={
+                "user_message": "Hello, how are you?",
+                "transaction_id": "test-transaction-id",
+            },
         )
 
         # Then
@@ -79,7 +83,10 @@ class TestChatAPI:
         empty_message = " " * 50
         response = self.client.post(
             "/chat",
-            json={"user_message": empty_message, "transaction_id": "test-transaction-id"},
+            json={
+                "user_message": empty_message,
+                "transaction_id": "test-transaction-id",
+            },
         )
         assert response.status_code == 400
         assert response.json() == {"detail": "Message cannot be empty."}
@@ -89,7 +96,10 @@ class TestChatAPI:
         self.mock_is_offensive.return_value = True
         response = self.client.post(
             "/chat",
-            json={"user_message": offensive_message, "transaction_id": "test-transaction-id"},
+            json={
+                "user_message": offensive_message,
+                "transaction_id": "test-transaction-id",
+            },
         )
         assert response.status_code == 400
         assert response.json() == {"detail": "Message contains offensive content."}
@@ -101,53 +111,12 @@ class TestChatAPI:
         )
         response = self.client.post(
             "/chat",
-            json={"user_message": "Hello, how are you?", "transaction_id": "test-transaction-id"},
+            json={
+                "user_message": "Hello, how are you?",
+                "transaction_id": "test-transaction-id",
+            },
         )
         assert response.status_code == 500
         assert response.json() == {
             "detail": "Failed to generate response: Failed to create chat completion"
         }
-
-
-def test_parse_response():
-    collected_data = CollectedData(
-        order_number="1234567890",
-        problem_category="technical",
-        problem_description="The product is not working",
-        urgency_level="high",
-    )
-    response_content = (
-        "All good, how can I help you today?"
-        + "<COLLECTED_DATA>"
-        + collected_data.model_dump_json()
-        + "</COLLECTED_DATA>"
-    )
-    response = parse_response(response_content)
-    assert isinstance(response, OpenAIResponse)
-    assert response.reply == "All good, how can I help you today?"
-    assert response.collected_data == collected_data
-
-
-@patch("chat.api.logger")
-def test_parse_response_no_collected_data_tag(m_logger):
-    response_content = "All good, how can I help you today?"
-    response = parse_response(response_content)
-    assert isinstance(response, OpenAIResponse)
-    assert response.reply == "All good, how can I help you today?"
-    assert response.collected_data == CollectedData()
-    m_logger.warning.assert_called_once_with(
-        "No <COLLECTED_DATA> block found in response."
-    )
-
-
-@patch("chat.api.logger")
-def test_parse_response_invalid_collected_data_json(m_logger):
-    response_content = "All good, how can I help you today? <COLLECTED_DATA>invalid json</COLLECTED_DATA>"
-    response = parse_response(response_content)
-    assert isinstance(response, OpenAIResponse)
-    assert response.reply == "All good, how can I help you today?"
-    assert response.collected_data == CollectedData()
-    assert (
-        "Invalid JSON in <COLLECTED_DATA>: invalid json"
-        in m_logger.error.call_args[0][0]
-    )

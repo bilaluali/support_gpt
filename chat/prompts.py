@@ -2,7 +2,8 @@
 System prompts for the customer support agent.
 """
 
-from openai.types.chat import ChatCompletionSystemMessageParam as OpenAISystemMessage
+from openai.types.chat import \
+    ChatCompletionSystemMessageParam as OpenAISystemMessage
 
 CHAT_SYSTEM_MESSAGE = OpenAISystemMessage(
     role="system",

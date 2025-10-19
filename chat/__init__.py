@@ -1,4 +1,5 @@
-from .api import router as chat_router, parse_response
+from .api import parse_response
+from .api import router as chat_router
 from .models import ChatRequest, ChatResponse, OpenAIResponse
 from .prompts import CHAT_SYSTEM_MESSAGE
 

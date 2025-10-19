@@ -1,7 +1,9 @@
 from datetime import datetime, timezone
 from unittest.mock import patch
+
 from fastapi.testclient import TestClient
 from openai.types.chat import ChatCompletionUserMessageParam as OpenAIUserMessage
+
 from chat.models import ChatSummaryResponse
 from chat.prompts import CHAT_SUMMARY_SYSTEM_MESSAGE
 from main import app
