@@ -1,0 +1,61 @@
+{
+    "session_id": "3e446b1a-5f23-4341-bae8-863aea07db38",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Hi, i need some help with my order"
+        },
+        {
+            "role": "assistant",
+            "content": "Of course! Could you please provide me with your order number?"
+        },
+        {
+            "role": "user",
+            "content": "I do not remember"
+        },
+        {
+            "role": "assistant",
+            "content": "No problem! Can you tell me what the issue is with your order? This will help me assist you better."
+        },
+        {
+            "role": "user",
+            "content": "Product defect"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for that information. Could you please describe the defect you're experiencing with the product?"
+        },
+        {
+            "role": "user",
+            "content": "It's literally broken!"
+        },
+        {
+            "role": "assistant",
+            "content": "I understand how frustrating that must be. Just to confirm, could you please provide me with the specific product name or details about the defect?"
+        },
+        {
+            "role": "user",
+            "content": "So the order is 6543"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for providing the order number. To summarize, you have a broken product from order number 6543. Is there anything else you would like to add regarding the defect?"
+        },
+        {
+            "role": "user",
+            "content": "No"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for confirming. Here’s what I have collected:\n\n- Order Number: 6543\n- Problem Category: Product defect\n- Problem Description: Broken product\n- Urgency Level: High (inferred from your tone)\n\nThank you for providing all the details. We'll review your issue and reply within 1-2 business days."
+        }
+    ],
+    "collected_data": {
+        "order_number": 6543,
+        "problem_category": "Product defect",
+        "problem_description": "Broken product",
+        "urgency_level": "high"
+    },
+    "created_at": "2025-10-19T12:17:05.804101Z",
+    "updated_at": "2025-10-19T12:26:23.364263Z"
+}

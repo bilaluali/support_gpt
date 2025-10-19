@@ -1,0 +1,77 @@
+{
+    "session_id": "313906e7-a65f-4deb-95df-e4e720d9ab0f",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Hi there"
+        },
+        {
+            "role": "assistant",
+            "content": "Hello! How can I assist you today?"
+        },
+        {
+            "role": "user",
+            "content": "How are you doing?"
+        },
+        {
+            "role": "assistant",
+            "content": "I'm here to help you! Could you please let me know your order number?"
+        },
+        {
+            "role": "user",
+            "content": "Let me find it for you"
+        },
+        {
+            "role": "assistant",
+            "content": "Sure, take your time!"
+        },
+        {
+            "role": "user",
+            "content": "Wait, checking my emails"
+        },
+        {
+            "role": "assistant",
+            "content": "No problem, I'll be here when you're ready."
+        },
+        {
+            "role": "user",
+            "content": "Okei, it's 134765432"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for providing your order number. Can you please tell me the category of the problem you're experiencing?"
+        },
+        {
+            "role": "user",
+            "content": "I just want an update to know where is it right now, and what might be the estiamted delivery"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for that information. It sounds like you're looking for an update on your order status. Could you please describe the issue in more detail?"
+        },
+        {
+            "role": "user",
+            "content": "Yes, no estimated delivery date was provider, so do not know what to expect"
+        },
+        {
+            "role": "assistant",
+            "content": "I understand your concern about not having an estimated delivery date. Thank you for clarifying. Just to confirm, can you let me know if there is anything else related to this issue that you would like to mention?"
+        },
+        {
+            "role": "user",
+            "content": "No, just what I told you"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for confirming. To summarize, I have your order number as 134765432, the problem category as \"order status inquiry,\" and the problem description as \"no estimated delivery date provided.\" \n\nLet me compile this information for you. \n\n\n\nThank you for providing all the details. We'll review your issue and reply within 1-2 business days."
+        }
+    ],
+    "collected_data": {
+        "order_number": 134765432,
+        "problem_category": "order status inquiry",
+        "problem_description": "no estimated delivery date provided",
+        "urgency_level": "medium"
+    },
+    "created_at": "2025-10-19T11:47:43.875366Z",
+    "updated_at": "2025-10-19T11:50:16.957799Z"
+}

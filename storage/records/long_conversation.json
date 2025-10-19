@@ -1,0 +1,213 @@
+{
+    "session_id": "3e446b1a-5f23-4341-bae8-863aea07db38",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Hi"
+        },
+        {
+            "role": "assistant",
+            "content": "Hello! How can I assist you today?"
+        },
+        {
+            "role": "user",
+            "content": "Are you feeling good?"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for asking! I'm here to help you. Could you please provide your order number?"
+        },
+        {
+            "role": "user",
+            "content": "Are you for suree doing good?"
+        },
+        {
+            "role": "assistant",
+            "content": "I appreciate your concern! I'm focused on assisting you. Could you please let me know the order number related to your inquiry?"
+        },
+        {
+            "role": "user",
+            "content": "Yes, I have an order, god forbid where the order number is"
+        },
+        {
+            "role": "assistant",
+            "content": "I understand that this might be frustrating. Could you please provide the order number so I can assist you further?"
+        },
+        {
+            "role": "user",
+            "content": "Give me some time to find"
+        },
+        {
+            "role": "assistant",
+            "content": "Of course! Take your time, and let me know when you're ready with the order number."
+        },
+        {
+            "role": "user",
+            "content": "Checking on my email;s"
+        },
+        {
+            "role": "assistant",
+            "content": "No problem! Just let me know when you find the order number, and I'll be here to assist you."
+        },
+        {
+            "role": "user",
+            "content": "Checking on whatsapp"
+        },
+        {
+            "role": "assistant",
+            "content": "That's perfectly fine! Take your time, and let me know when you have the order number."
+        },
+        {
+            "role": "user",
+            "content": "Wait still checking"
+        },
+        {
+            "role": "assistant",
+            "content": "Absolutely, take your time. I'm here whenever you're ready!"
+        },
+        {
+            "role": "user",
+            "content": "Are you still there"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, I'm still here! Just let me know when you have the order number, and I'll be ready to assist you further."
+        },
+        {
+            "role": "user",
+            "content": "Okey, so I did an order 2 weeks ago"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the update! Could you please provide the specific order number for that order?"
+        },
+        {
+            "role": "user",
+            "content": "So its gonna be 876543"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for providing the order number. Now, could you please tell me the category of the problem you're experiencing with this order?"
+        },
+        {
+            "role": "user",
+            "content": "Ahh wait sorry it's the order 76543"
+        },
+        {
+            "role": "assistant",
+            "content": "No problem at all! Thank you for the correction. Could you please let me know the category of the problem you're experiencing with order number 76543?"
+        },
+        {
+            "role": "user",
+            "content": "Wait, no yes it is the 8374858"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the clarification! So, the order number is 8374858. Now, could you please tell me the category of the problem you're experiencing with this order?"
+        },
+        {
+            "role": "user",
+            "content": "Hmmm"
+        },
+        {
+            "role": "assistant",
+            "content": "Take your time! Whenever you're ready, please let me know the category of the problem you're facing with order number 8374858."
+        },
+        {
+            "role": "user",
+            "content": "So there is something wrong with it"
+        },
+        {
+            "role": "assistant",
+            "content": "I understand. Could you please provide a bit more detail about the specific problem you're experiencing with the order?"
+        },
+        {
+            "role": "user",
+            "content": "There is an issue"
+        },
+        {
+            "role": "assistant",
+            "content": "I appreciate your response. Could you please describe the issue in more detail? This will help me assist you better."
+        },
+        {
+            "role": "user",
+            "content": "So the thing is just not working"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the information. To summarize, the order number is 8374858, and the problem is that the product is not working. \n\nCould you please provide any additional details about the issue?"
+        },
+        {
+            "role": "user",
+            "content": "Wait let me describe to you"
+        },
+        {
+            "role": "assistant",
+            "content": "Of course! Please take your time to describe the issue, and I'll be here to listen."
+        },
+        {
+            "role": "user",
+            "content": "There is an issue"
+        },
+        {
+            "role": "assistant",
+            "content": "I understand that there's an issue. Could you please provide more specific details about what is not working with the order? This will help me assist you better."
+        },
+        {
+            "role": "user",
+            "content": "So I order some ear pods and basically one of them is just not working"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for the details. To summarize, the order number is 8374858, the problem category is related to the ear pods, and the specific issue is that one of them is not working.\n\nBased on your description, it sounds like this is a high urgency issue. \n\nHere’s the collected information:\n\n\nThank you for providing all the details. We'll review your issue and reply within 1-2 business days."
+        },
+        {
+            "role": "user",
+            "content": "Yes that's the issue, when am I gonna be hearing some news?"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you for your patience. As mentioned, we'll review your issue and reply within 1-2 business days. If you have any other questions in the meantime, feel free to ask!"
+        },
+        {
+            "role": "user",
+            "content": "Am I gonna get refunded?"
+        },
+        {
+            "role": "assistant",
+            "content": "Refund policies can vary based on the specific circumstances of the issue. Once we review your case, we will provide you with information regarding a refund if applicable. Thank you for your understanding!"
+        },
+        {
+            "role": "user",
+            "content": "How much are you gonna take to answer me?"
+        },
+        {
+            "role": "assistant",
+            "content": "We aim to respond within 1-2 business days after reviewing your issue. I appreciate your patience during this time. If you have any other questions, feel free to ask!"
+        },
+        {
+            "role": "user",
+            "content": "So I am getting an answer in 1-2 days for sure?"
+        },
+        {
+            "role": "assistant",
+            "content": "Yes, you will receive a response within 1-2 business days after we review your issue. Thank you for your understanding! If you have any other questions, feel free to ask."
+        },
+        {
+            "role": "user",
+            "content": "Okey, enjoy the weekend"
+        },
+        {
+            "role": "assistant",
+            "content": "Thank you! I hope you have a great weekend as well. If you need any assistance in the future, don't hesitate to reach out."
+        }
+    ],
+    "collected_data": {
+        "order_number": 8374858,
+        "problem_category": "ear pods",
+        "problem_description": "one of the ear pods is not working",
+        "urgency_level": "high"
+    },
+    "created_at": "2025-10-19T16:35:28.775058Z",
+    "updated_at": "2025-10-19T16:41:23.223569Z"
+}

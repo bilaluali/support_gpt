@@ -1,0 +1,45 @@
+{
+    "session_id": "544f9117-af0f-484c-a22d-f3a4b943de94",
+    "messages": [
+        {
+            "role": "user",
+            "content": "hey"
+        },
+        {
+            "role": "assistant",
+            "content": "Hello! How can I assist you today? If you have an issue with an order, please provide your order number."
+        },
+        {
+            "role": "user",
+            "content": "the order is !@#$%^#@"
+        },
+        {
+            "role": "assistant",
+            "content": "It seems that the order number you provided is not valid. Could you please provide a valid order number?"
+        },
+        {
+            "role": "user",
+            "content": "it's inventedorder1234"
+        },
+        {
+            "role": "assistant",
+            "content": "It looks like the order number you provided is not in the correct format. Please provide a valid order number that consists of numbers only."
+        },
+        {
+            "role": "user",
+            "content": "it's (*&^%$#"
+        },
+        {
+            "role": "assistant",
+            "content": "It seems that the order number you provided is still not valid. Please provide a valid order number that consists of numbers only."
+        }
+    ],
+    "collected_data": {
+        "order_number": null,
+        "problem_category": null,
+        "problem_description": null,
+        "urgency_level": null
+    },
+    "created_at": "2025-10-19T19:09:18.562403Z",
+    "updated_at": "2025-10-19T19:10:16.363285Z"
+}
