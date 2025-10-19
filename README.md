@@ -4,7 +4,7 @@ A FastAPI-based customer support agent powered by OpenAI that provides intellige
 
 ## Demo
 
-You can find sample conversations in the `db/records` directory.  
+You can find sample conversations in the `storage/records` directory.  
 
 ## Setup
 
